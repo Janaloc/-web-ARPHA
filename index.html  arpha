@@ -1,0 +1,888 @@
+    <!DOCTYPE html>
+    <html lang="es" class="translated-ltr">
+        <head>
+            <meta charset="utf-8"/>
+            <meta name="viewport" content="width= device-width">
+            <title> arpha - Filigrana momposina </title>  
+            <meta name="robots" content="index, follow">
+            <meta name="theme-color" content="#09f">
+            <meta name="description" content="Discover Arpha's signature watch collections, unique pieces, and one-of-a-kind creations in Colombia. Cra 2 #18-43 , Mompox, Bolivar, Colombia ">
+            <link rel="stylesheet" href="css/styles.css">
+        </head>
+
+
+
+        <style>
+        body {
+            background-color: black;
+            margin: 0;
+            padding: 0;
+             
+        }
+
+                .iconos-menu {
+        display: flex;
+        justify-content:right;
+        align-items: center;
+        gap: 30px;
+        font-family: 'Raleway', sans-serif;
+        margin-top: 0px;
+        }
+
+        .iconos-menu a {
+        color: transparent;
+        background: linear-gradient(to top, #c0c0c0, #e0e0e0, #c0c0c0); /* Plata */
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 24px;
+        text-decoration: none;
+        transition: transform 0.2s ease, opacity 0.3s ease;
+        }
+
+        .iconos-menu a:hover {
+        transform: scale(1.2);
+        opacity: 0.8;
+        }
+
+       
+      .site-header h1{
+        font-family: 'Raleway', sans-serif;
+        font-weight: 100;
+        text-transform: uppercase;
+        line-height: 1.6;
+        background: linear-gradient(
+             to top,
+         #999999,  /* gris medio */
+         #d1d1d1,  /* gris claro */
+         #f5f5f5,  /* casi blanco */
+         #b0b0b0  /* gris más oscuro */
+          );
+        -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+
+        text-shadow: 0 1px 2px rgba(255, 255, 255, 0.1);
+
+      }
+
+ 
+
+     
+        /* Estructura principal */
+        .site-header {
+            background-color: #000;
+            padding: 20px 0;
+            text-align: center;
+        }
+        
+        .logo-container {
+            margin: 0 auto;
+            max-width: 400px;
+        }
+        
+        .logo-container img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+
+        
+        .site-tagline {
+         
+        background: linear-gradient(
+             to top,
+         #999999,  /* gris medio */
+         #d1d1d1,  /* gris claro */
+         #f5f5f5,  /* casi blanco */
+         #b0b0b0  /* gris más oscuro */
+          );
+        -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+
+        text-shadow: 0 1px 2px rgba(255, 255, 255, 0.1);
+        }
+         
+
+       
+        
+        /* Navegacion */
+        .main-navigation {
+            background: rgba(0, 0, 0, 0.9);
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            justify-content: center;
+            flex-grow: 1;
+        }
+        
+        .nav-item {
+            margin: 0 15px;
+        }
+        
+        .nav-link {
+    
+            font-family: 'Raleway', sans-serif;
+            font-size: 1rem;
+            font-weight: 500;
+            padding: 8px 15px;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            background: linear-gradient(
+             to top,
+         #606060,  /* gris medio */
+         #a8a8a8,  /* gris claro */
+         #b6b6b6,  /* casi blanco */
+         #656565  /* gris más oscuro */
+          );
+        -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+             
+         }
+        
+        .nav-link:hover {
+            background: rgba(116, 114, 114, 0.1);
+            
+        }
+        
+        
+        /* Hero Section */
+        .hero-section {
+            padding: 40px 0;
+            text-align: center;
+        }
+        
+        .hero-image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            max-width: 100%;
+        }
+        
+        .hero-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .btn-comprar {
+        background: linear-gradient(to right, #c0c0c0, #f5f5f5, #c0c0c0);
+            color: #000;
+            font-weight: 600;
+            border: none;
+            padding: 8px 20px;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .btn-comprar:hover {
+        background: linear-gradient(to right, #b8b8b8, #e0e0e0);
+        }
+        
+        
+        /* Productos */
+        .products-section {
+            padding: 60px 0;
+        }
+        
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .card {
+            width: 250px;
+            height: 250px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.5s ease;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            margin: 20px;
+        }
+        
+        .card img {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 50%;
+            transition: all 0.5s ease;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .content {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            transform: translateY(100%);
+            transition: all 0.5s ease;
+            border-radius: 0 0 50% 50%;
+            opacity: 0;
+        }
+        
+        
+        .card h2 {
+            margin: 10px 0;
+            color: #f8f8f8;
+            font-size: 1.2em;
+            font-weight: 100;
+        }
+        
+        .card p {
+            font-size: 0.9em;
+            font-weight: 100;
+            color: #ccc;
+            margin: 5px 0;
+        }
+        
+        .card:hover {
+            height: 400px;
+            border-radius: 20px;
+            background: rgba(0, 0, 0, 0.7);
+        }
+        
+        .card:hover img {
+            width: 150px;
+            height: 150px;
+            margin-top: 20px;
+            border-color: #96a5c3;
+            box-shadow: 0 0 15px rgba(157, 168, 191, 0.6);
+        }
+        
+        .card:hover .content {
+            transform: translateY(0);
+            opacity: 1;
+            border-radius: 0 0 20px 20px;
+        }
+        
+        /* Cartera Section */
+        .wallet-section {
+            padding: 60px 0;
+            text-align: center;
+        }
+        
+        .wallet-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .wallet-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+        
+        /* shop */
+
+        .shop-section {
+            padding: 60px 0;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .card {
+            width: 250px;
+            height: 250px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.5s ease;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            margin: 20px;
+        }
+        
+        .card img {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 50%;
+            transition: all 0.5s ease;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .content {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            transform: translateY(100%);
+            transition: all 0.5s ease;
+            border-radius: 0 0 50% 50%;
+            opacity: 0;
+        }
+        
+        
+        .card h2 {
+            font-family: 'Raleway', sans-serif;
+            margin: 10px 0;
+            font-weight: 100;
+            font-size: 1.2em;
+            background: linear-gradient(
+             to top,
+             #686868,  /* gris medio */
+             #a8a8a8,  /* gris claro */
+             #b6b6b6,  /* casi blanco */
+             #585858  /* gris más oscuro */
+          );
+        -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .card p {
+            font-family: 'Raleway', sans-serif;
+            font-size: 0.9em;
+            color: #ccc;
+            margin: 5px 0;
+            background: linear-gradient(
+             to top,
+             #bbbbbb,  /* gris medio */
+             #a8a8a8,  /* gris claro */
+             #b6b6b6,  /* casi blanco */
+             #838383   /* gris más oscuro */
+          );
+        -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .card:hover {
+            height: 400px;
+            border-radius: 20px;
+            background: rgba(0, 0, 0, 0.7);
+        }
+        
+        .card:hover img {
+            width: 150px;
+            height: 150px;
+            margin-top: 20px;
+            border-color: #6f83ac;
+            box-shadow: 0 0 15px rgba(111, 131, 172, 0.6);
+        }
+        
+        .card:hover .content {
+            transform: translateY(0);
+            opacity: 1;
+            border-radius: 0 0 20px 20px;
+        }
+        .btn-comprar {
+        background: linear-gradient(to right, #c0c0c0, #f5f5f5, #c0c0c0);
+            color: #000;
+            font-weight: 600;
+            border: none;
+            padding: 8px 20px;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .btn-comprar:hover {
+        background: linear-gradient(to right, #b8b8b8, #e0e0e0);
+        }
+    
+        /* Footer */
+        .site-footer {
+            background-color: #111;
+            color: #fff;
+            padding: 40px 0 0;
+            font-family: 'Raleway', sans-serif;
+            
+        }
+        
+        .footer-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .footer-section {
+            flex: 1;
+            min-width: 250px;
+            margin: 0 15px 30px;
+        }
+        
+        .footer-section h3 {
+            color: #fff;
+            margin-bottom: 20px;
+            font-family:'Courier New', Courier, monospace;
+             font-size: large;
+             color: black;
+             font-weight:lighter;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        
+        .footer-section h3:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 50px;
+            height: 2px;
+            background: linear-gradient(90deg, #6f83ac, transparent);
+        }
+        
+        .footer-section p, .footer-section li {
+            color: #bbb;
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+        
+        .footer-section a {
+            color: #bbb;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-section a:hover {
+            color: #6f83ac;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin: 20px 0;
+        }
+        
+        .social-link {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            transition: all 0.3s;
+        }
+        
+        .social-link:hover {
+            background: #6f83ac;
+            transform: translateY(-3px);
+        }
+        
+        .newsletter-form {
+            display: flex;
+            margin-top: 15px;
+        }
+        
+        .newsletter-form input {
+            flex: 1;
+            padding: 10px;
+            border: none;
+            border-radius: 4px 0 0 4px;
+            outline: none;
+        }
+        
+        .newsletter-form button {
+            background: #6f83ac;
+            color: white;
+            border: none;
+            padding: 0 15px;
+            border-radius: 0 4px 4px 0;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        
+        .newsletter-form button:hover {
+            background: #5a6d99;
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            padding: 20px 0;
+            background: #000;
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #888;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .footer-section {
+                flex: 100%;
+                text-align: center;
+            }
+            
+            .social-links {
+                justify-content: center;
+            }
+            
+            .footer-section h3:after {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            
+            .nav-menu {
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+            
+            .nav-item {
+                margin: 5px;
+            }
+            
+            .cart-button {
+                margin: 10px 0 0;
+            }
+        }
+                                   
+        </style>
+
+    
+        <body>
+
+            <header class="site-header">
+
+             <div class="logo-container">
+                <img 
+                    src="logo/arpha.jpeg"
+                    width="400px"
+                    height="200px">
+            </div>
+                 
+            
+        
+                
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300&display=swap" rel="stylesheet">
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+        <div class="iconos-menu">
+           
+            <a href="#ubicacion" title="Ubicación"><i class="fas fa-map-marker-alt"></i></a>
+            <a href="#carrito" title="Carrito"><i class="fas fa-shopping-bag"></i></a>
+          </div>
+             <h1> <small>  FILIGRANA MOMPOSINA, ELABORADA EN PLATA Y ORO POR JOYEROS MOMPOSINOS.</small></h1>
+            
+              <nav class="main-navigation">
+                <div class="nav-container">
+                   
+                    <ul class="nav-menu">
+                       
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">Home</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="#productos">Productos</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">Sobre Nosotros</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contacto">Contacto</a>
+                        </li>
+                    </ul>
+                    
+                   
+
+                </div>
+              </nav> 
+             </div>
+            </header>  
+                
+            <br>
+        
+            <main class="main-content">
+              <section class="hero-section">
+                <div class="hero-image">
+              <img src="/logo/pescaito.jpeg"
+                width="500px"
+                height="500px"
+                title="dije pescaito filigrana"
+                alt="imagen dije pescaito de filigrana en plata">
+                <div class="content">
+                    <h2>Dije pescaito </h2>
+                    <p>Dije pescaito en filigrana elaborado en plata.</p>
+                    <p>Hecho a mano en Mompox-Colombia.</p>
+                    <p class="precio">$120.000</p>
+                     <button class="btn-comprar">Comprar</button>
+                      
+                 </div>
+                
+                 </div>
+                </section>
+
+                
+                <section id="Productos" class="products-section">
+                    <div class="container">
+                        <div class="card">
+                            <img src="/logo/brazalete flor.jpeg"
+                            width="200px"
+                             height="200px"
+                              title="brazalete flor"
+                             alt="imagen brazalete flor en filigrana">
+                             <div class="content">
+                                <h2>Brazalete flor</h2>
+                                <p>Brazalete de flor en semi-espiral, elaborado en plata.</p>
+                                <p>Hecho a mano en Mompox-Colombia.</p>
+                                <p class="precio">$120.000</p>
+                                 <button class="btn-comprar">Comprar</button>
+                                  
+                             </div>
+                        </div>
+                        <div class="card">
+                            <img src="/logo/prendedor mariposa.jpeg"
+                            width="200px"
+                            height="200px"
+                            title="prendedor mariposa"
+                            alt="imagen prendedor mariposa en filigrana">
+                            <div class="content">
+                                <h2>Prendedor Mariposa</h2>
+                                <p>Prendedor Mariposa elaborado en plata.</p>
+                                <p>Hecho a mano en Mompox-Colombia.</p>
+                                <p class="precio">$120.000</p>
+                                <button class="btn-comprar">Comprar</button>
+                                  
+                            </div>
+                            
+                        </div>
+                        <div class="card">
+                            <img src="/logo/aretes guacamayas.jpeg"
+                            width="200px"
+                            height="200px"
+                            title="aretes guacamayas"
+                            alt="imagen Aretes Guacamayas en filigrana">
+                            <div class="content">
+                                <h2>Aretes Guacamayas</h2>
+                                <p>Aretes Guacamayas elaborado en plata</p>
+                                <p>Hechos a mano en Mompox-Colombia</p>
+                                <p class="precio">$120.000</p>
+                                 <button class="btn-comprar">Comprar</button>
+                                 
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+                <main>
+                <section id="Contacto" class="wallet-section">
+                    <div class="wallet-container">
+                        <img src="/logo/cartera 1.jpeg"
+                        width="600px"
+                         height="700px"
+                        title="cartera filigrana"
+                        alt="imagen cartera de filigrana en plata" class="wallet-image">
+                    </div>
+                    <br>
+                    <br>
+
+                    <div class="wallet-container">
+                        <img src="logo/cartera 2 grande y mediana.jpeg"
+                        width="800px"
+                        height="400px"
+                        title="carteras en Tomatillos"
+                        alt="imagen carteras en tomatillos - grande y mediana ">
+                    </div>
+                </section>
+                </main>
+
+                <br>
+                <br>
+                <br>
+                
+                <main>
+                <section>
+                    <section id="shop" class="shop-section">
+                    <div class="container">
+                    <div class="card">
+                        <img src="logo/orejera mariposa.jpeg"
+                        width="200px"
+                        height="200px"
+                        title="Orejera Mariposa"
+                        alt="imagen Orejera Mariposa en filigrana">
+                        <div class="content">
+                            <h2>Orejera Mariposa</h2>
+                            <p>Orejera Mariposa elaborado en plata, mostacillas y perlas.</p>
+                            <p>Hecho a mano en Mompox-Colombia.</p>
+                            <p class="precio">$120.000</p>
+                             <button class="btn-comprar">Comprar</button>
+                             
+                        </div>
+                    </div>
+                  
+
+
+                        <div class="card">
+                            <img src="logo/cinturon.jpeg"
+                            width="200px"
+                            height="200px"
+                            title="Cinturon"
+                            alt="imagen cinturon  en filigrana">
+                            <div class="content">
+                                <h2>Cinturon en filigrana</h2>
+                                <p>cinturon elaborado en plata.</p>
+                                <p>Hecho a mano en Mompox-Colombia.</p>
+                                 <p class="precio">$120.000</p>
+                                <button class="btn-comprar">Comprar</button>
+                                 
+                            </div>
+                        </div>
+                  
+            
+            
+            
+                <div class="card">
+                    <img src="logo/collar panderos.jpeg"
+                    width="200px"
+                    height="200px"
+                    title="Cinturon"
+                    alt="imagen collar panderos  en filigrana">
+                    <div class="content">
+                        <h2>Collar panderos en filigrana</h2>
+                        <p>Collar elaborado en plata.</p>
+                        <p>Hecho a mano en Mompox-Colombia.</p>
+                         <p class="precio">$120.000</p>
+                        <button class="btn-comprar">Comprar</button>
+                        
+                        
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="logo/vincha.jpg"
+                    width="200px"
+                    height="200px"
+                    title="vincha"
+                    alt="imagen vincha en filigrana">
+                    <div class="content">
+                        <h2>vincha en filigrana</h2>
+                        <p>vincha elaborado en plata.</p>
+                        <p>Hecho a mano en Mompox-Colombia.</p>
+                         <p class="precio">$120.000</p>
+                        <button class="btn-comprar">Comprar</button>
+                        
+                        
+                    </div>
+                </div>
+
+
+                <div class="card">
+                    <img src="logo/brazalete corazon.jpg"
+                    width="200px"
+                    height="200px"
+                    title="Brazalete Corazón "
+                    alt="imagen Brazalete de Corazón en filigrana">
+                    <div class="content">
+                        <h2>Brazalete de Corazón en filigrana</h2>
+                        <p>Brazalete  elaborado en plata.</p>
+                        <p>Hecho a mano en Mompox-Colombia.</p>
+                         <p class="precio">$120.000</p>
+                        <button class="btn-comprar">Comprar</button>
+                        
+                        
+                    </div>
+                </div>
+                    </div>
+            </section>
+               
+                </main>
+                <br>
+                <br>
+                <footer class="site-footer">
+                    <div class="footer-content">
+                        <div class="footer-section">
+                            <h3>
+                                "Contacto"
+                                ::after
+                             </h3>
+                             <p>
+                                <i class="fas fa-map-markeet-alt">
+                                    ::before
+                                </i>
+                                "cra 2 #18-43, Mompox(Bolivar)-Colombia"
+                             </p>
+                             <p>
+                                <i class="fas fa-phone">
+                                    
+                                    ::before
+                                </i>
+                                "+57 310 251 3100"
+                             </p>
+                             <p>
+                                <i class="fas fa-envelope">
+                                    ::before
+                                </i>
+                                "jaloco_22@hotmail.com"
+                             </p>
+                        </div>
+                        <div class="footer-section">
+                            <h3>
+                                "Enlaces Rápidos"
+                                ::after
+                            </h3>
+                            <ul>
+                                <li>
+                                    ::marker
+                                    <a href=""
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </footer>
+                  
+                  
+
+                  
+            
+        
+        </body>
+    </html>
